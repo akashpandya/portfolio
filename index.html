@@ -4,112 +4,117 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
+
+    <title>Akash Pandya | Data Analyst Portfolio (SQL, Tableau, Excel, R)</title>
+    <meta
+      name="description"
+      content="Data Analyst portfolio by Akash Pandya — SQL, Tableau, Excel, R, Python. Case studies: Bellabeat, Cyclistic, CO₂ emissions. Oshawa, ON."
+    />
+
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
   </head>
+
   <body>
     <nav id="desktop-nav">
       <div class="logo">Akash Pandya</div>
       <div>
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">Projects</a></li>
+          <li><a href="#experience">Skills</a></li>
+          <li><a href="#data-projects">Data Projects</a></li>
+          <li><a href="#dev-projects">Dev Projects</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
     </nav>
+
     <nav id="hamburger-nav">
       <div class="logo">Akash Pandya</div>
       <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
+        <button class="hamburger-icon" type="button" onclick="toggleMenu()" aria-label="Open menu">
           <span></span>
           <span></span>
           <span></span>
-        </div>
-        <div class="menu-links">
+        </button>
+        <ul class="menu-links">
           <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Skills</a></li>
+          <li><a href="#data-projects" onclick="toggleMenu()">Data Projects</a></li>
+          <li><a href="#dev-projects" onclick="toggleMenu()">Dev Projects</a></li>
           <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        </div>
+        </ul>
       </div>
     </nav>
+
     <section id="profile">
       <div class="section__pic-container">
         <img src="./assets/profile-pic.png" alt="Akash Pandya profile picture" />
       </div>
+
       <div class="section__text">
         <p class="section__text__p1">Hello, I'm</p>
         <h1 class="title">Akash Pandya</h1>
-        <p class="section__text__p2">Data Analyst & Frontend Developer</p>
+        <p class="section__text__p2">Data Analyst (primary) • Front-End Developer (bonus)</p>
+
         <div class="btn-container">
-          <button
-            class="btn btn-color-2"
-            onclick="window.open('./assets/resume-akashpandya.docx')"
-          >
+          <a class="btn btn-color-2" href="./assets/resume-akashpandya.docx" target="_blank" rel="noopener">
             Download CV
-          </button>
-          <button class="btn btn-color-1" onclick="location.href='./#contact'">
-            Contact Info
-          </button>
+          </a>
+          <a class="btn btn-color-1" href="#contact">Contact Info</a>
         </div>
+
         <div id="socials-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="My LinkedIn profile"
-            class="icon"
-            onclick="location.href='https://www.linkedin.com/in/akash-pandya100/'"
-          />
-          <img
-            src="./assets/github.png"
-            alt="My Github profile"
-            class="icon"
-            onclick="location.href='https://github.com/akashpandya'"
-          />
+          <a href="https://www.linkedin.com/in/akash-pandya100/" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon" />
+          </a>
+          <a href="https://github.com/akashpandya" target="_blank" rel="noopener" aria-label="GitHub">
+            <img src="./assets/github.png" alt="GitHub icon" class="icon" />
+          </a>
         </div>
       </div>
     </section>
+
     <section id="about">
       <p class="section__text__p1">Get To Know More</p>
       <h1 class="title">About Me</h1>
+
       <div class="section-container">
         <div class="section__pic-container">
-          <img
-            src="./assets/about-pic.png"
-            alt="Profile picture"
-            class="about-pic"
-          />
+          <img src="./assets/about-pic.png" alt="Akash Pandya headshot" class="about-pic" />
         </div>
+
         <div class="about-details-container">
           <div class="about-containers">
             <div class="details-container">
-              <img
-                src="./assets/experience.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <h3>Experience</h3>
-              <p>1+ years in Data Analytics<br />2+ years Frontend Development</p>
+              <img src="./assets/experience.png" alt="Experience icon" class="icon" />
+              <h3>Focus</h3>
+              <p>
+                Data Analytics Projects<br />
+                (SQL • Tableau • Excel • R • Python)
+              </p>
             </div>
+
             <div class="details-container">
-              <img
-                src="./assets/education.png"
-                alt="Education icon"
-                class="icon"
-              />
-              <h3>Education</h3>
-              <p>Google Data Analytics Certificate<br />IBM Frontend Developer Certificate</p>
+              <img src="./assets/education.png" alt="Education icon" class="icon" />
+              <h3>Certificates</h3>
+              <p>
+                Google Data Analytics Certificate<br />
+                IBM Front-End Developer Certificate
+              </p>
             </div>
           </div>
+
           <div class="text-container">
             <p>
-              Hi there! I'm Akash Pandya, a data analyst and front-end web developer based in Oshawa, Ontario. With over a decade of customer support experience, I bring a unique blend of communication, problem-solving, and technical skills to every project. I now focus on uncovering insights through data and building user-friendly websites to support impactful decision-making.
+              I’m Akash Pandya, a data analyst and front-end developer based in Oshawa, Ontario.
+              I bring 10+ years of customer-facing experience and translate messy problems into clear insights,
+              dashboards, and practical recommendations. I’m currently focused on data analyst roles, with front-end work as a bonus skill.
             </p>
           </div>
         </div>
       </div>
+
       <img
         src="./assets/arrow.png"
         alt="Arrow icon"
@@ -117,171 +122,139 @@
         onclick="location.href='./#experience'"
       />
     </section>
+
     <section id="experience">
       <p class="section__text__p1">Explore My</p>
-      <h1 class="title">Experience</h1>
+      <h1 class="title">Skills</h1>
+
       <div class="experience-details-container">
         <div class="about-containers">
-          
-          <!-- Merged Frontend + Others -->
-          <div class="details-container">
-            <h2 class="experience-sub-title">Front-End Development Skills & Tools</h2>
-            <div class="article-container">
-              <!-- Frontend Skills -->
-              <article><img src="./assets/checkmark.png" alt="Experience icon" class="icon" /><div><h3>HTML</h3><p>Experienced</p></div></article>
-              <article><img src="./assets/checkmark.png" alt="Experience icon" class="icon" /><div><h3>CSS</h3><p>Experienced</p></div></article>
-              <article><img src="./assets/checkmark.png" alt="Experience icon" class="icon" /><div><h3>SASS</h3><p>Intermediate</p></div></article>
-              <article><img src="./assets/checkmark.png" alt="Experience icon" class="icon" /><div><h3>JavaScript</h3><p>Basic</p></div></article>
-              <article><img src="./assets/checkmark.png" alt="Experience icon" class="icon" /><div><h3>TypeScript</h3><p>Basic</p></div></article>
-              <article><img src="./assets/checkmark.png" alt="Experience icon" class="icon" /><div><h3>React</h3><p>Experienced</p></div></article>
-              <!-- Tools -->
-              <article><img src="./assets/checkmark.png" alt="Experience icon" class="icon" /><div><h3>API Integration</h3><p>Basic</p></div></article>
-              <article><img src="./assets/checkmark.png" alt="Experience icon" class="icon" /><div><h3>Python</h3><p>Intermediate</p></div></article>
-              <article><img src="./assets/checkmark.png" alt="Experience icon" class="icon" /><div><h3>Express JS</h3><p>Basic</p></div></article>
-              <article><img src="./assets/checkmark.png" alt="Experience icon" class="icon" /><div><h3>Git</h3><p>Intermediate</p></div></article>
-            </div>
-          </div>
-    
-          <!-- New Data Analytics Skills -->
           <div class="details-container">
             <h2 class="experience-sub-title">Data Analytics Skills</h2>
             <div class="article-container">
-              <article><img src="./assets/checkmark.png" alt="Experience icon" class="icon" /><div><h3>SQL (BigQuery)</h3><p>Experienced</p></div></article>
-              <article><img src="./assets/checkmark.png" alt="Experience icon" class="icon" /><div><h3>Python (Pandas, NumPy)</h3><p>Intermediate</p></div></article>
-              <article><img src="./assets/checkmark.png" alt="Experience icon" class="icon" /><div><h3>Excel / Google Sheets</h3><p>Experienced</p></div></article>
-              <article><img src="./assets/checkmark.png" alt="Experience icon" class="icon" /><div><h3>Tableau</h3><p>Experienced</p></div></article>
-              <article><img src="./assets/checkmark.png" alt="Experience icon" class="icon" /><div><h3>Power BI</h3><p>Basic</p></div></article>
-              <article><img src="./assets/checkmark.png" alt="Experience icon" class="icon" /><div><h3>R Language</h3><p>Intermediate</p></div></article>
-              <article><img src="./assets/checkmark.png" alt="Experience icon" class="icon" /><div><h3>Data Cleaning</h3><p>Experienced</p></div></article>
-              <article><img src="./assets/checkmark.png" alt="Experience icon" class="icon" /><div><h3>Data Visualization</h3><p>Experienced</p></div></article>
-              <article><img src="./assets/checkmark.png" alt="Experience icon" class="icon" /><div><h3>Exploratory Data Analysis (EDA)</h3><p>Basic</p></div></article>
+              <article><img src="./assets/checkmark.png" alt="Check" class="icon" /><div><h3>SQL (BigQuery)</h3><p>Strong</p></div></article>
+              <article><img src="./assets/checkmark.png" alt="Check" class="icon" /><div><h3>Excel / Google Sheets</h3><p>Strong</p></div></article>
+              <article><img src="./assets/checkmark.png" alt="Check" class="icon" /><div><h3>Tableau</h3><p>Strong</p></div></article>
+              <article><img src="./assets/checkmark.png" alt="Check" class="icon" /><div><h3>R</h3><p>Intermediate</p></div></article>
+              <article><img src="./assets/checkmark.png" alt="Check" class="icon" /><div><h3>Python (Pandas, NumPy)</h3><p>Intermediate</p></div></article>
+              <article><img src="./assets/checkmark.png" alt="Check" class="icon" /><div><h3>Data Cleaning</h3><p>Strong</p></div></article>
+              <article><img src="./assets/checkmark.png" alt="Check" class="icon" /><div><h3>Data Visualization</h3><p>Strong</p></div></article>
+              <article><img src="./assets/checkmark.png" alt="Check" class="icon" /><div><h3>EDA</h3><p>Working knowledge</p></div></article>
             </div>
           </div>
-    
+
+          <div class="details-container">
+            <h2 class="experience-sub-title">Front-End Skills (bonus)</h2>
+            <div class="article-container">
+              <article><img src="./assets/checkmark.png" alt="Check" class="icon" /><div><h3>HTML</h3><p>Strong</p></div></article>
+              <article><img src="./assets/checkmark.png" alt="Check" class="icon" /><div><h3>CSS</h3><p>Strong</p></div></article>
+              <article><img src="./assets/checkmark.png" alt="Check" class="icon" /><div><h3>SASS</h3><p>Intermediate</p></div></article>
+              <article><img src="./assets/checkmark.png" alt="Check" class="icon" /><div><h3>JavaScript</h3><p>Working knowledge</p></div></article>
+              <article><img src="./assets/checkmark.png" alt="Check" class="icon" /><div><h3>TypeScript</h3><p>Basic</p></div></article>
+              <article><img src="./assets/checkmark.png" alt="Check" class="icon" /><div><h3>React</h3><p>Working knowledge</p></div></article>
+              <article><img src="./assets/checkmark.png" alt="Check" class="icon" /><div><h3>Git</h3><p>Intermediate</p></div></article>
+            </div>
+          </div>
         </div>
       </div>
+
       <img
         src="./assets/arrow.png"
         alt="Arrow icon"
         class="icon arrow"
-        onclick="location.href='./#projects'"
+        onclick="location.href='./#data-projects'"
       />
     </section>
 
-    <section id="projects">
+    <!-- DATA PROJECTS -->
+    <section id="data-projects">
       <p class="section__text__p1">Check Out My</p>
       <h1 class="title">Data Analytics Projects</h1>
+
       <div class="experience-details-container">
         <div class="about-containers">
           <div class="details-container color-container">
             <div class="article-container">
-              <img src="./assets/data-project-1.png" alt="Data Project 1" class="project-img" />
+              <img src="./assets/data-project-1.png" alt="Bellabeat Fitness Tracker Analysis" class="project-img" />
             </div>
             <h2 class="experience-sub-title project-title">Bellabeat Fitness Tracker Analysis</h2>
             <div class="btn-container">
-              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/akashpandya/Bellabeat-Fitness-Tracker'">Github</button>
+              <a class="btn btn-color-2 project-btn" href="https://github.com/akashpandya/Bellabeat-Fitness-Analysis" target="_blank" rel="noopener">GitHub</a>
             </div>
           </div>
+
           <div class="details-container color-container">
             <div class="article-container">
-              <img src="./assets/data-project-2.png" alt="Data Project 2" class="project-img" />
+              <img src="./assets/data-project-2.png" alt="CO2 Emissions Analysis" class="project-img" />
             </div>
             <h2 class="experience-sub-title project-title">CO2 Emissions by Country</h2>
             <div class="btn-container">
-              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/akashpandya/CO2_Emissions_Analysis'">Github</button>
+              <a class="btn btn-color-2 project-btn" href="https://github.com/akashpandya/CO2_Emissions_Analysis" target="_blank" rel="noopener">GitHub</a>
             </div>
           </div>
+
           <div class="details-container color-container">
             <div class="article-container">
-              <img src="./assets/data-project-3.png" alt="Data Project 3" class="project-img" />
+              <img src="./assets/data-project-3.png" alt="Cyclistic Bike-Share Case Study" class="project-img" />
             </div>
             <h2 class="experience-sub-title project-title">Cyclistic Bike-Share Case Study</h2>
             <div class="btn-container">
-              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/akashpandya/cyclistic-capstone-project'">Github</button>
+              <a class="btn btn-color-2 project-btn" href="https://github.com/akashpandya/cyclistic-capstone-project" target="_blank" rel="noopener">GitHub</a>
             </div>
           </div>
         </div>
       </div>
+
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#dev-projects'"
+      />
     </section>
-    <section id="projects">
+
+    <!-- DEV PROJECTS -->
+    <section id="dev-projects">
       <p class="section__text__p1">My Recent</p>
-      <h1 class="title">F.end Dev Projects</h1>
+      <h1 class="title">Front-End Projects</h1>
+
       <div class="experience-details-container">
         <div class="about-containers">
           <div class="details-container color-container">
             <div class="article-container">
-              <img
-                src="./assets/project-1.png"
-                alt="Project 1"
-                class="project-img"
-              />
+              <img src="./assets/project-1.png" alt="RangTarang NGO Website" class="project-img" />
             </div>
             <h2 class="experience-sub-title project-title">RangTarang NGO Website</h2>
             <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/akashpandya/rangtarang.ca'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://rangtarang.ca/'"
-              >
-                Live Demo
-              </button>
+              <a class="btn btn-color-2 project-btn" href="https://github.com/akashpandya/rangtarang.ca" target="_blank" rel="noopener">GitHub</a>
+              <a class="btn btn-color-2 project-btn" href="https://rangtarang.ca/" target="_blank" rel="noopener">Live Demo</a>
             </div>
           </div>
+
           <div class="details-container color-container">
             <div class="article-container">
-              <img
-                src="./assets/project-2.png"
-                alt="Project 2"
-                class="project-img"
-              />
+              <img src="./assets/project-2.png" alt="Akash Sound DJ Website" class="project-img" />
             </div>
             <h2 class="experience-sub-title project-title">Akash Sound DJ Website</h2>
             <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/akashpandya/akashound.netlify.app'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://akashsound.netlify.app/'"
-              >
-                Live Demo
-              </button>
+              <a class="btn btn-color-2 project-btn" href="https://github.com/akashpandya/akashound.netlify.app" target="_blank" rel="noopener">GitHub</a>
+              <a class="btn btn-color-2 project-btn" href="https://akashsound.netlify.app/" target="_blank" rel="noopener">Live Demo</a>
             </div>
           </div>
+
           <div class="details-container color-container">
             <div class="article-container">
-              <img
-                src="./assets/project-3.png"
-                alt="Project 3"
-                class="project-img"
-              />
+              <img src="./assets/project-3.png" alt="AI Image Generation App" class="project-img" />
             </div>
             <h2 class="experience-sub-title project-title">AI Image Generation</h2>
             <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/akashpandya/OpenAI-ImageGen'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://akashapi-images.netlify.app/'"
-              >
-                Live Demo
-              </button>
+              <a class="btn btn-color-2 project-btn" href="https://github.com/akashpandya/OpenAI-ImageGen" target="_blank" rel="noopener">GitHub</a>
+              <a class="btn btn-color-2 project-btn" href="https://akashapi-images.netlify.app/" target="_blank" rel="noopener">Live Demo</a>
             </div>
           </div>
         </div>
       </div>
+
       <img
         src="./assets/arrow.png"
         alt="Arrow icon"
@@ -289,41 +262,39 @@
         onclick="location.href='./#contact'"
       />
     </section>
+
     <section id="contact">
       <p class="section__text__p1">Get in Touch</p>
       <h1 class="title">Contact Me</h1>
+
       <div class="contact-info-upper-container">
         <div class="contact-info-container">
-          <img
-            src="./assets/email.png"
-            alt="Email icon"
-            class="icon contact-icon email-icon"
-          />
+          <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
           <p><a href="mailto:akash1pandya@gmail.com">akash1pandya@gmail.com</a></p>
         </div>
+
         <div class="contact-info-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="LinkedIn icon"
-            class="icon contact-icon"
-          />
-          <p><a href="https://www.linkedin.com/in/akash-pandya100/">LinkedIn</a></p>
+          <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
+          <p><a href="https://www.linkedin.com/in/akash-pandya100/" target="_blank" rel="noopener">LinkedIn</a></p>
         </div>
       </div>
     </section>
+
     <footer>
       <nav>
         <div class="nav-links-container">
           <ul class="nav-links">
             <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
+            <li><a href="#experience">Skills</a></li>
+            <li><a href="#data-projects">Data Projects</a></li>
+            <li><a href="#dev-projects">Dev Projects</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
       </nav>
-      <p>Copyright &#169; 2023 Akash Pandya. All Rights Reserved.</p>
+      <p>Copyright &#169; 2026 Akash Pandya. All Rights Reserved.</p>
     </footer>
+
     <script src="script.js"></script>
   </body>
 </html>
