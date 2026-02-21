@@ -387,6 +387,13 @@ article .icon {
   color: black;
 }
 
+.project-desc {
+  margin: 0 1.2rem 1rem;
+  color: rgb(85, 85, 85);
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
 .project-btn {
   color: black;
   border-color: rgb(163, 163, 163);
